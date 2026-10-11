@@ -1,0 +1,34 @@
+{
+  "pass": true,
+  "assetSha256": "7eb0a974aa1415f6cc292457d5d8b11969a465123337d82f39898d1402ae11ab",
+  "originalElevenClipsExact": true,
+  "geometryMaterialRigHierarchyExact": true,
+  "originalBinaryBytesPreserved": 1396684,
+  "newClips": [
+    {
+      "clip": "Sprout_WalkLoop",
+      "duration": 1.25,
+      "channels": 29,
+      "sourceStreamsExact": true,
+      "stationaryRoot": true
+    },
+    {
+      "clip": "Sprout_InspectTarget",
+      "duration": 1.5,
+      "channels": 29,
+      "sourceStreamsExact": true,
+      "stationaryRoot": true
+    },
+    {
+      "clip": "Sprout_TapTarget",
+      "duration": 1.25,
+      "channels": 29,
+      "sourceStreamsExact": true,
+      "stationaryRoot": true
+    }
+  ],
+  "errors": 0,
+  "warnings": 2,
+  "warningsUnchangedFromV008": true,
+  "scope": "GLB structure and exact source animation streams; no native desktop behavior is implied."
+}

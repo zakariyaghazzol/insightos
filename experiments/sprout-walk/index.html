@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eef5fa" />
+    <title>Sprout · A little field trip</title>
+    <link rel="icon" href="/buddy/sprout-v008.png" />
+  </head>
+  <body>
+    <main class="playground">
+      <header class="masthead">
+        <a class="wordmark" href="./"
+          ><img src="/buddy/sprout-v008.png" alt="" />Sprout<span class="experiment-label"
+            >Playground</span
+          ></a
+        >
+        <span class="preview-note"><span></span>Sample folders only</span>
+      </header>
+      <section class="intro" aria-labelledby="title">
+        <p class="eyebrow">A LITTLE FIELD TRIP</p>
+        <h1 id="title">Let him find his feet.</h1>
+        <p>Choose a folder. Sprout will take it from here.</p>
+      </section>
+      <section id="stage" class="stage" aria-label="Sprout walking playground" aria-busy="true">
+        <div class="stage-wash" aria-hidden="true"></div>
+        <div class="stage-caption">Your little companion, out exploring.</div>
+        <div id="folders" class="folders"></div>
+        <div id="arrival" class="arrival" aria-hidden="true"></div>
+        <div id="traveler" class="traveler" aria-hidden="true">
+          <div class="foot-shadow"></div>
+          <canvas id="avatar"></canvas>
+        </div>
+        <div id="status" class="status" role="status" aria-live="polite">Getting Sprout ready…</div>
+        <aside
+          id="folder-preview"
+          class="folder-preview"
+          aria-label="Sample folder contents"
+          hidden
+        >
+          <div class="preview-header">
+            <div>
+              <span class="eyebrow">SAMPLE FOLDER</span>
+              <h2 id="folder-title"></h2>
+            </div>
+            <button id="close-preview" class="icon-button" aria-label="Close sample folder">
+              ×
+            </button>
+          </div>
+          <ul id="folder-files"></ul>
+          <p>This is a preview. Your files stay where they are.</p>
+        </aside>
+      </section>
+      <footer class="controls">
+        <div class="actions">
+          <button id="tour" class="button primary" disabled>
+            <span aria-hidden="true">↗</span>Take a tour
+          </button>
+          <button id="turn" class="button" disabled>
+            <span aria-hidden="true">↻</span>Turn around
+          </button>
+          <button id="stop" class="button" disabled><span aria-hidden="true">□</span>Stop</button>
+          <button id="reset" class="button quiet" disabled>Reset</button>
+        </div>
+        <label class="motion-setting"
+          ><input id="reduced-motion" type="checkbox" />Reduce motion</label
+        >
+      </footer>
+      <p class="footnote">
+        Your cursor stays yours. <span>Esc to stop · Tab to choose a folder</span>
+      </p>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

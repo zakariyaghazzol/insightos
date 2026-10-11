@@ -1,0 +1,55 @@
+{
+  "version": "sprout-walk-v001",
+  "experimental": true,
+  "asset": "/experiments/sprout-walk/sprout-walk-v001.glb",
+  "sha256": "7eb0a974aa1415f6cc292457d5d8b11969a465123337d82f39898d1402ae11ab",
+  "bytes": 1484972,
+  "blender": "5.2.2 LTS",
+  "editable_source": "experiments\\sprout-walk\\asset-source\\sprout-walk-v001.blend",
+  "source_sha256": "5e054e5075034296c42fbbb3ec6004dbabfd13b17253e40100cf8f55115ada11",
+  "source_export": "experiments\\sprout-walk\\asset-source\\sprout-walk-source-v001.glb",
+  "source_export_sha256": "aea54897a46663a3f545a10c452fd2396f61cac22546bf00adea06e54772beca",
+  "forward_axis": "+Z",
+  "up_axis": "+Y",
+  "fps": 24,
+  "clips": [
+    {
+      "name": "Sprout_WalkLoop",
+      "duration_seconds": 1.25,
+      "root_motion": false
+    },
+    {
+      "name": "Sprout_InspectTarget",
+      "duration_seconds": 1.5,
+      "root_motion": false
+    },
+    {
+      "name": "Sprout_TapTarget",
+      "duration_seconds": 1.25,
+      "root_motion": false
+    }
+  ],
+  "walk": {
+    "stride_model_units": 0.82,
+    "cycle_seconds": 1.25,
+    "foot_stance_fraction": 0.55,
+    "foot_lift_model_units": 0.115,
+    "steps_per_cycle": 2,
+    "phase_rule": "Set clip time to (travelled distance / stride modulo 1) * cycle_seconds. Direction belongs to a separate parent transform."
+  },
+  "tap_contact_seconds": 0.625,
+  "preservation": {
+    "baseline_files": {
+      "design\\buddy\\sprout\\source\\sprout-soft-original-v008.blend": "ad1810d71b8643ac921ed21ff650bd04f31624942c059e18aa14f2134f4d9f54",
+      "public\\buddy\\sprout-v008.glb": "1f86fbf8d11d00491d1cd41b72c066f1eadd5bff01a70a0cd75c75c4995bfe85"
+    },
+    "original_11_clips_exact": true,
+    "geometry_materials_rig_morphs_hierarchy_exact": true,
+    "original_binary_prefix_exact": true
+  },
+  "limitations": [
+    "In-place walk with a fixed authored stride; no ground/obstacle IK.",
+    "No root travel or turning clips; runtime controls travel, acceleration and facing.",
+    "Blender renders and browser glass shading are separate verification surfaces."
+  ]
+}
